@@ -1,0 +1,362 @@
+html{
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	color: #333;
+}
+
+a{
+	cursor : pointer;
+}
+
+section{
+	overflow: hidden;
+}
+
+p{
+	line-height: 1.25;
+}
+
+#Introduction,
+#product{
+	max-width: 920px;
+	width: 100%;
+	margin:35px auto;
+}
+
+header{
+    margin: auto;
+    background-color: black;
+	padding: 10px 20px;
+}
+
+header > ul{
+	list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+header > ul > li{
+	float: left;
+	padding: 10px;
+	color: white;
+	font-size: 18px;
+}
+
+h1,
+h2{
+    font-size: 35px;
+    padding: 20px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    border-bottom: dotted 4px #333;
+}
+
+#Introduction > p{
+    margin: auto;
+    width: 50%;
+    float: left;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#scene,
+#other{
+	background-image: url("../../share_img/dot_back.png");
+	padding: 60px 0 5px;
+}
+
+#other{
+	padding: 60px 0;
+}
+
+.mv_slider{
+	max-width: 3000px;
+    height: auto;
+    margin: auto;
+}
+
+#scene_1 > img,
+#scene_3 > img,{
+	float: left;
+}
+
+#scene_2 > img,
+#scene_4 > img{
+	float: right;
+}
+
+.scene_exp{
+	float: right;
+    position: relative;
+    top: -100px;
+    background-color: white;
+    border: solid 5px;
+    border-radius: 60px;
+    padding: 20px;
+    max-width: 250px;
+}
+
+#scene_2 > .scene_exp,
+#scene_4 > .scene_exp{
+	float: left;
+}
+
+.scene_exp > span{
+	border-bottom: dotted 4px;
+    padding-bottom: 12px;
+    font-size: 22px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+}
+
+.scene_exp > p{
+	margin: 8px 0;
+	font-size: 16px;
+}
+
+.scene_content{
+	max-width: 920px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: -50px;
+    padding: 10px;
+}
+
+.scene_content > img{
+	max-width: 750px;
+	width: 100%;
+	box-shadow: 8px 8px 0px 0px #232323;
+	transition: opacity 0.3s ease-out;
+}
+
+#product > ul{
+	list-style: none;
+	margin-top: 40px;
+	padding: 0px;
+    width: 100%;
+    max-width: 960px;
+}
+
+#product > ul > li{
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+#product > ul > li:nth-child(n+2){
+	border-top: dotted 2px #9a9a9a;
+	padding-top: 20px;
+}
+
+#product > ul > li > img{
+	width: 250px;
+	margin: 0 10px 0 0;
+	float: left;
+}
+
+#product > ul > li > h3{
+	font-size: 24px;
+    margin: 0 0 15px;
+}
+
+#product > ul > li > p{
+	margin: 0;
+	margin-bottom: 112px;
+	font-size: 14px;
+}
+
+#product > ul > li > a{
+	float: right;
+    background-color: black;
+    padding: 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;	
+}
+
+.other_content{
+	max-width: 920px;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    border: solid 4px #383838;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.other_content > span{
+	font-size: 35px;
+    padding: 20px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    border-bottom: dotted 4px #333;
+    font-weight: bold;
+}
+
+.other_content > ul{
+	margin: 10px 0 0;
+	padding: 0;
+	list-style: none;
+	line-height: 1.25;
+	list-style: disc;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+@media screen and (max-width:960px){ 
+	header{
+		padding: 4vw;
+	}
+
+	header > a > img{
+		width: 20vw;
+		height: auto;
+	}
+
+	header > ul > li{
+		padding: 2.5vw 1.5vw;
+		font-size: 4.5vw;
+	}
+
+	h1,
+	h2{
+		font-size: 10vw;
+		width: 90%;
+	}
+
+	#Introduction > p{
+		width: 90%;
+	    float: initial;
+	    padding: 0;
+	    margin: 4vw auto;
+	    font-size: 5vw;
+	}
+
+	#scene,
+	#other{
+		padding: 9vw 0 9vw;
+	}
+
+	.scene_content{
+		padding: 0;
+	}
+
+	.scene_content > img{
+		width: 98%;
+	}
+
+	.scene_exp{
+		margin: auto;
+	    float: initial;
+	    top: -5vw;
+	    max-width: initial;
+    	width: 90%;
+    	box-sizing: border-box;
+	}
+
+	.scene_exp > span{
+		font-size: 6vw;
+	}
+
+	.scene_exp > p{
+		margin: 2vw 0;
+    	font-size: 4.75vw;
+	}
+
+	.scene_content{
+		height: 110vw;
+	}
+
+	#scene_2 > img, 
+	#scene_4 > img{
+		float: initial;	
+	}
+
+	#scene_2 > .scene_exp, #scene_4 > .scene_exp{
+		margin: auto;
+	    float: initial;
+	    top: -5vw;
+	}
+
+	#product > ul{
+		width: 90%;
+	    margin: auto;
+	    margin-top: 4vw;
+	}
+
+	#product > ul > li{
+		margin: 0;
+    	padding-bottom: 9vw;
+    	text-align: center;
+	}
+
+	#product > ul > li > h3{
+		font-size: 5.5vw;
+	    margin: 3vw 0;
+	}
+
+	#product > ul > li > img{
+		margin: 0;
+    	width: 100%;
+    	float: initial;
+	}
+
+	#product > ul > li > p{
+		font-size: 5vw;
+		margin-bottom: 5vw;
+		text-align: left;
+	}
+
+	#product > ul > li > a{
+		width: 100%;
+		padding: 5vw;
+		box-sizing: border-box;
+		float: initial;
+		display: block;
+		border-radius: 2vw;
+		font-size: 5vw;
+		text-align: center;
+	}
+
+	.other_content{
+		width: 90%;
+	}
+
+	.other_content > span{
+		font-size: 10vw;
+		width: 90%;
+	}
+
+	.other_content > ul{
+		width: 88%;
+	    float: initial;
+	    padding: 0;
+	    margin: 4vw auto;
+	    font-size: 5vw;
+	}
+
+	.other_content > ul > li{
+		margin-top: 1.5vw;
+	}
+}
+
+@media screen and (max-width:750px){
+	.scene_content{
+		height: 130vw;
+	}
+}
+
+@media screen and (max-width:320px){
+	.scene_content{
+		height: 141vw;
+	}
+}
