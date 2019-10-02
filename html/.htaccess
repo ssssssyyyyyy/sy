@@ -1,4 +1,0 @@
-AuthType     Basic
-AuthName     "Authentication Sample"
-AuthUserFile https://github.com/ssssssyyyyyy/sy/blob/master/html/.htpasswd
-require valid-user
