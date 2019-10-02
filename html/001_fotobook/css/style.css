@@ -198,7 +198,8 @@ h2{
 }
 
 .other_content > ul{
-	margin: 10px 0 0;
+	margin: 10px auto 0;
+	width: 95%;
 	padding: 0;
 	list-style: none;
 	line-height: 1.25;
@@ -333,7 +334,7 @@ footer{
 
 	.other_content > span{
 		font-size: 10vw;
-		width: 90%;
+		width: 82%;
 	}
 
 	.other_content > ul{

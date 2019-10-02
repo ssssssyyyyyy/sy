@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>002_cash</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../share_css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--web fonts-->
+	<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+	<!--web fonts-->
+</head>
+<body>
+<header>
+	<img src="../share_img/logo_c.png">
+</header>
+<section id="app">
+	<img class="ua_ios" src="../share_img/banner_ios.png">
+	<img class="ua_android" src="../share_img/banner_android.png">
+</section>
+<section id="mv">
+	<img src="../share_img/mv_sq_big.png">	
+</section>
+<section id="intro">
+	<h1>文章文章</h1>
+	<br>
+	<span class="main_copy">文章文章文章文章文章文章</span>
+	<p class="sub_copy">文章文章文章<br>文章文章文章文章文章文章<br>文章文章文章文章<br><br>文章文章文章文章文章文章<br>文章文章文章文章</p>
+	<ul>
+		<li>
+			<img src="../share_img/clock.png">
+			<span>文章文章文章</span>
+			<br>
+			<span>文章文章文章文章</span>
+			<p>文章文章文章文章文章文章文章文章文章文章文章文章</p>
+		</li>
+		<li>
+			<img src="../share_img/clock.png">
+			<span>文章文章文章</span>
+			<br>
+			<span>文章文章文章文章</span>
+			<p>文章文章文章文章文章文章文章文章文章文章文章文章</p>
+		</li>
+		<li>
+			<img src="../share_img/clock.png">
+			<span>文章文章文章</span>
+			<br>
+			<span>文章文章文章文章</span>
+			<p>文章文章文章文章文章文章文章文章文章文章文章文章</p>
+		</li>
+	</ul>
+</section>
+<section id="sentence">
+	<span class="main_copy">文章文章文章文章</span>
+	<br>
+	<span class="main_copy">文章文章文章文章文章文章</span>
+	<p class="sub_copy">文章文章文章文章文章文章文章文章文章文章文章文章<br>文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章<br>文章文章文章文章文章文章文章</p>
+</section>
+<section id="case">
+	<span class="main_copy">文章！</span>
+	<p class="sub_copy">文章文章文章文章文章文章文章</p>
+	<ul class="slider">
+		<li><img src="../share_img/img_sq_min.png"></li>
+		<li><img src="../share_img/img_sq_min.png"></li>
+		<li><img src="../share_img/img_sq_min.png"></li>
+		<li><img src="../share_img/img_sq_min.png"></li>
+		<li><img src="../share_img/img_sq_min.png"></li>
+		<li><img src="../share_img/img_sq_min.png"></li>
+		<li><img src="../share_img/img_sq_min.png"></li>
+		<li><img src="../share_img/img_sq_min.png"></li>
+		<li><img src="../share_img/img_sq_min.png"></li>
+		<li><img src="../share_img/img_sq_min.png"></li>
+	</ul>
+</section>
+<section id="movie">
+	<span class="main_copy">文章文章！</span>
+	<br>
+	<li>
+		<img class="movie_1 movie" data-izimodal-open=".movie_1_modal" src="../share_img/movie_thum.png">
+		<p>文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章</p>
+	</li>
+	<li>
+		<img class="movie_2 movie" src="../share_img/movie_thum.png">
+		<p>文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章</p>
+	</li>
+	<li>
+		<img class="movie_3 movie" src="../share_img/movie_thum.png">
+		<p>文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章</p>
+	</li>
+</section>
+
+<div class="movie_1_modal">
+	<div class="modal_content">
+		<img class="movie" src="../share_img/movie.png">
+	</div>
+</div>
+
+<script src="../share_js/jquery.3.2.1.min.js"></script>
+<!--slick-->
+<link rel="stylesheet" type="text/css" href="../share_js/slick/slick.css"/>
+<script type="text/javascript" src="../share_js/slick/slick.min.js"></script>
+<!--slick-->
+<!--iziModal-->
+<link rel="stylesheet" type="text/css" href="../share_js/iziModal/iziModal.min.css"/>
+<script type="text/javascript" src="../share_js/iziModal/iziModal.min.js"></script>
+<!--iziModal-->
+
+<script type="text/javascript">
+	$(".slider").slick({
+		arrows: false,
+	    autoplay: true,
+	    autoplaySpeed: 0,
+	    cssEase: "linear",
+	    speed: 5000,
+	    slidesToShow: 6,
+	    slidesToScroll: 1,
+	    responsive: [
+		   {
+		    breakpoint: 1476,
+		    settings: {
+		      slidesToShow: 4
+		    }
+		   }
+		 ]
+	});
+
+	$(function() {
+		$(".movie_1_modal").iziModal({
+			width: 1250,
+			background: "rgba(0,0,0,0)"
+		});
+	})
+</script>
+
+<script type="text/javascript">
+	var user="";
+	if ((navigator.userAgent.indexOf("iPhone") > 0 && navigator.userAgent.indexOf( "iPad") == -1) || navigator.userAgent.indexOf("iPod") > 0){
+		$(".ua_ios").css("display","inline-block");
+	}else if(navigator.userAgent.indexOf("Android") > 0){
+		$(".ua_android").css("display","inline-block");
+	}else{
+		$(".ua_ios").css("display","inline-block");
+		$(".ua_android").css("display","inline-block");
+	}
+</script>
+
+</body>
+</html>
