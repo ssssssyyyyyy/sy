@@ -1,0 +1,4 @@
+AuthType Basic  
+AuthUserFile /https://github.com/ssssssyyyyyy/sy/tree/master/html/.htpasswd  
+AuthName "ユーザー名とパスワードを入力してください"  
+require valid-user
