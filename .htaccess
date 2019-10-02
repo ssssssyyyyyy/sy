@@ -1,4 +1,4 @@
 AuthType Basic  
-AuthUserFile /https://github.com/ssssssyyyyyy/sy/tree/master/html/.htpasswd  
+AuthUserFile /https://github.com/ssssssyyyyyy/sy/blob/master/.htpasswd
 AuthName "ユーザー名とパスワードを入力してください"  
 require valid-user
