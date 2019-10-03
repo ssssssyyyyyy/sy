@@ -1,6 +1,9 @@
+@charset "utf-8";
+
 html{
-	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-family: "M PLUS Rounded 1c", sans-serif;
 	color: #333;
+	scroll-behavior: smooth;
 }
 
 a{
@@ -40,6 +43,24 @@ header > ul > li{
 	padding: 10px;
 	color: white;
 	font-size: 18px;
+}
+
+.product_link{
+	padding: 20px 30px;
+    background-color: black;
+    z-index: 99;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    display: block;
+    max-width: 200px;
+    text-align: center;
+    margin: auto;
+    top: -30px;
+    font-weight: bold;
+    margin-bottom: -58px;
+    font-size: 16px;
 }
 
 h1,
@@ -228,23 +249,39 @@ footer{
 		font-size: 4.5vw;
 	}
 
+	.product_link{
+		margin-bottom: -12vw;
+	}
+
 	h1,
 	h2{
 		font-size: 10vw;
-		width: 90%;
+		box-sizing: border-box;
 	}
 
 	#Introduction > p{
-		width: 90%;
+		width: 100%;
 	    float: initial;
 	    padding: 0;
 	    margin: 4vw auto;
 	    font-size: 5vw;
 	}
 
+	#Introduction,
+	#product{
+		margin: 5vw auto;
+		padding: 0 4vw;
+    	box-sizing: border-box;
+	}
+
 	#scene,
 	#other{
-		padding: 9vw 0 9vw;
+		padding: 0 4vw;
+    	box-sizing: border-box;
+	}
+
+	#other{
+		padding: 4vw 4vw;
 	}
 
 	.scene_content{
@@ -252,7 +289,7 @@ footer{
 	}
 
 	.scene_content > img{
-		width: 98%;
+
 	}
 
 	.scene_exp{
@@ -260,8 +297,9 @@ footer{
 	    float: initial;
 	    top: -5vw;
 	    max-width: initial;
-    	width: 90%;
     	box-sizing: border-box;
+    	border-radius: 10vw;
+    	padding: 4vw;
 	}
 
 	.scene_exp > span{
@@ -289,9 +327,11 @@ footer{
 	}
 
 	#product > ul{
-		width: 90%;
+		width: 100%;
 	    margin: auto;
-	    margin-top: 4vw;
+	    margin-top: 5vw;
+	    padding: 0 4vw;
+    	box-sizing: border-box;
 	}
 
 	#product > ul > li{
@@ -329,12 +369,13 @@ footer{
 	}
 
 	.other_content{
-		width: 90%;
+		padding: 4vw;
 	}
 
 	.other_content > span{
 		font-size: 10vw;
-		width: 82%;
+		width: 100%;
+    	box-sizing: border-box;
 	}
 
 	.other_content > ul{

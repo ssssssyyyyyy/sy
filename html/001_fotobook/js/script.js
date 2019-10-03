@@ -5,7 +5,7 @@ $(".mv_slider").slick({
 });
 //slick
 
-$(window).on('load resize', function(){
+$(window).on("load resize", function(){
 	var ww = window.innerWidth;
 	if( ww > 750){
 		$(".slide_1").attr("src","../share_img/slide_1.png");
