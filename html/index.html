@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script type="text/javascript" src="share_js/jquery.3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="share_css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--web fonts-->
+	<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+	<!--web fonts-->
+</head>
+<body>
+
+
+<section id="case">
+	<ul class="case_slider">
+		<li class="fuwafuwa">
+			<img src="share_img/slide_1_sp.png">
+			<div class="card">
+				<span>制作事例</span>
+				<div>フォトアルバム</div>
+			</div>
+		</li>
+		<li class="fuwafuwa_re">
+			<img src="share_img/slide_1_sp.png">
+			<div class="card">
+				<span>制作事例</span>
+				<div>フォトアルバム</div>
+			</div>
+		</li>
+		<li class="fuwafuwa">
+			<img src="share_img/slide_1_sp.png">
+			<div class="card">
+				<span>制作事例</span>
+				<div>フォトアルバム</div>
+			</div>
+		</li>
+		<li class="fuwafuwa_re">
+			<img src="share_img/slide_1_sp.png">
+			<div class="card">
+				<span>制作事例</span>
+				<div>フォトアルバム</div>
+			</div>
+		</li>
+		<li class="fuwafuwa">
+			<img src="share_img/slide_1_sp.png">
+			<div class="card">
+				<span>制作事例</span>
+				<div>フォトアルバム</div>
+			</div>
+		</li>
+		<li class="fuwafuwa_re">
+			<img src="share_img/slide_1_sp.png">
+			<div class="card">
+				<span>制作事例</span>
+				<div>フォトアルバム</div>
+			</div>
+		</li>
+		<li class="fuwafuwa">
+			<img src="share_img/slide_1_sp.png">
+			<div class="card">
+				<span>制作事例</span>
+				<div>フォトアルバム</div>
+			</div>
+		</li>
+		<li class="fuwafuwa_re">
+			<img src="share_img/slide_1_sp.png">
+			<div class="card">
+				<span>制作事例</span>
+				<div>フォトアルバム</div>
+			</div>
+		</li>
+	</ul>
+		
+
+</section>
+
+<section id="mascotCahara">
+	<div class="uneCircle"></div>
+	  <div id="mascot_eye">
+	    <div id="mascot_right_eye">
+	      <div class="eye"></div>
+	    </div>
+	    <div id="mascot_left_eye">
+	      <div class="eye"></div>
+	    </div>
+	  </div>
+	</div>
+</section>
+
+<footer></footer>
+
+<!--slick-->
+<!--
+<link rel="stylesheet" type="text/css" href="share_js/slick/slick.css">
+<script type="text/javascript" src="share_js/slick/slick.min.js"></script>-->
+<!--slick-->
+<script type="text/javascript" src="script.js"></script>
+<script>
+  var mascotchara = new mascot(
+    "#mascot_eye",
+    "#mascot_left_eye > div",
+	"#mascot_right_eye > div"    
+  );
+
+  $(window).on("load mousemove", function(e) {
+    var cX = e.clientX;
+    var cY = e.clientY;
+
+    if (!cX) {
+      cX = $(window).width() / 2;
+      cY = $(window).height() / 2;
+    }
+
+    mascotchara.update(cX, cY).render();
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../share_css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--web fonts-->
+	<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+	<!--web fonts-->
+</head>
+<body>
+<header>
+	<a><img src="../share_img/logo_3.png"></a>
+	<!--
+	<ul>
+		<li><a>menu1</a></li>
+		<li><a>menu2</a></li>
+		<li><a>menu3</a></li>
+	</ul>
+	-->
+</header>
+
+<section id="main">
+	<h1>文章文章文章文章文章<br>文章文章<p>text text text text text text text text <br>text text text text text text text text text text </p></h1>
+	<a>私たちの〇〇を知る</a>
+</section>
+<div class="arrowWrap">
+	<div class="arrowInner">
+	  <p>SCROLL DOWN</p>
+	  <div class="arrow"></div>
+	</div>
+</div>
+<section id="about">
+	<div class="left">
+		<h2>About Us<br><p>text text text text text text text text <br>text text text text text text text text text text </p></h2>
+		<!--<a>私たちの〇〇を知る</a>-->
+	</div>
+	<div class="slider right">
+		<img src="img/work_1.png">	
+		<img src="img/work_2.png">	
+		<img src="img/work_3.png">	
+	</div>
+</section>
+<section id="product">
+	<div class="left">
+		<h2>Service<br><p>text text text text text text text text <br>text text text text text text text text text text </p></h2>
+		<a>私たちのサービスを知る</a>
+	</div>
+	<div class="slider right">
+		<img src="img/family_1.png">	
+		<img src="img/family_2.png">	
+		<img src="img/family_3.png">	
+	</div>
+</section>
+<section id="recruit">
+	<div class="left">
+		<h2>Recruit<br><p>text text text text text text text text <br>text text text text text text text text text text </p></h2>
+		<a>採用情報</a>
+	</div>
+	<div class="slider right">
+		<img src="img/recruit_1.png">	
+		<img src="img/recruit_2.png">	
+		<img src="img/recruit_3.png">	
+	</div>
+</section>
+<section id="news">
+	<h2>News</h2>
+	<ul>
+		<li>
+			<img src="img/thum.jpeg">
+			<span>お知らせ</span>
+			<div>2019年08月14日</div>
+			<p>text text text text text text text text text text text text text text text text text text text text </p>
+		</li>
+		<li>
+			<img src="img/thum.jpeg">
+			<span>お知らせ</span>
+			<div>2019年08月14日</div>
+			<p>text text text text text text text text text text text text text text text text text text text text </p>
+		</li>
+		<li>
+			<img src="img/thum.jpeg">
+			<span>お知らせ</span>
+			<div>2019年08月14日</div>
+			<p>text text text text text text text text text text text text text text text text text text text text </p>
+		</li>
+	</ul>
+	
+</section>
+
+<script src="../share_js/bubbly/bubbly-bg.js"></script>
+<script>bubbly({
+	  colorStart: "#fff4e6",
+	  colorStop: "#ffe9e4",
+	  blur:1,
+	  compose: "source-over",
+	  bubbleFunc:() => `hsla(${Math.random() * 50}, 100%, 50%, .3)`
+});</script>
+
+<script src="../share_js/jquery.3.2.1.min.js"></script>
+<!--slick-->
+<link rel="stylesheet" type="text/css" href="../share_js/slick/slick.css"/>
+<script type="text/javascript" src="../share_js/slick/slick.min.js"></script>
+<!--slick-->
+
+<script type="text/javascript">
+	$(".slider").slick({
+		dots: false,
+		autplay: true,
+		fade: true,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 2000
+	});
+</script>
+
+</body>
+</html>
