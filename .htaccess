@@ -1,4 +1,0 @@
-AuthType Basic  
-AuthUserFile /https://ssssssyyyyyy.github.io/sy/html/.htpasswd
-AuthName "ユーザー名とパスワードを入力してください"  
-require valid-user
