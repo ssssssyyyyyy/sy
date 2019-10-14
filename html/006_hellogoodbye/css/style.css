@@ -1,0 +1,363 @@
+body{
+	background-color: #788FB8;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+	background-color: #262F44;
+    padding: 20px 30px;
+	overflow: hidden;
+	position: fixed;
+    width: 100%;
+    z-index: 99;
+    box-sizing: border-box;
+}
+
+header > span{
+    font-size: 30px;
+    color: white;
+}
+
+header > span::before{
+	content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: -16px;
+    border-top: solid 2px;
+    border-right: solid 2px;
+    transform: rotate(-135deg) translateY(-135%);
+    color: white;
+    margin-left: 10px;
+    float: left;
+    left: 17px;
+}
+
+header > div{
+    float: right;
+    position: relative;
+    left: -20px;
+}
+
+header > div > img{
+	width: 30px;
+    padding-left: 20px;
+}
+
+header > div::after{
+	content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    float: right;
+    top: -16px;
+    border-top: solid 2px;
+    border-right: solid 2px;
+    transform: rotate(135deg) translateY(-100%);
+    color: white;
+    margin-left: 10px;
+}
+
+#message{
+	padding: 20px 35px;
+}
+
+#message > ul{
+	padding-left: 0;
+	list-style: none;
+	font-size: 34px;
+}
+
+#message > ul > li > img{
+	width: 69px;
+	height: auto;
+	float: left;
+}
+
+#message > ul > li > span{
+	/*font-size: 34px;*/
+    position: relative;
+    display: inline-block;
+    padding: 15px 15px 9px 15px;
+    color: #383838;
+    left: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/*
+#message > ul > li:nth-child(odd){
+	animation: fontSize 1.2s ease infinite;
+}
+*/
+
+
+#message > ul > li{
+	animation: messageAct 0.2s ease;
+}
+
+.m_7,
+.m_19,
+.m_50{
+	font-size: 300%;	
+}
+
+.m_69{
+	font-size: 300%;	
+
+}
+
+.m_70{
+	font-size: 150%;	
+
+}
+
+.m_71{
+	font-size: 75%;	
+
+}
+
+.m_4 > span,
+.m_5 > span,
+.m_6 > span{
+	animation: textSpin 0.5s ease;
+}
+
+.m_5{
+	font-size: 175%;
+}
+
+.m_6{
+	font-size: 250%;
+}
+
+.m_8 > span,
+.m_11 > span,
+.m_14 > span,
+.m_20 > span,
+.m_51 > span,
+.m_68 > span{
+	animation: fontInc 2s ease infinite;
+	transform-origin: center bottom;
+}
+
+.m_23,
+.m_32,
+.m_54,
+.m_62{
+	font-size: 150%;
+}
+
+.m_25,
+.m_34,
+.m_56,
+.m_64{
+	font-size: 200%;
+}
+
+.m_27,
+.m_36,
+.m_58,
+.m_66{
+	font-size: 250%;
+}
+
+.m_39{
+	font-size: 150%;
+}
+
+.m_40{
+	font-size: 200%;
+}
+
+.m_41{
+	font-size: 250%;
+}
+
+.m_42{
+	font-size: 300%;
+}
+
+.m_43{
+	font-size: 350%;
+}
+
+.m_47{
+	font-size: 150%;
+}
+
+.m_48{
+	font-size: 200%;
+}
+
+.m_49{
+	font-size: 250%;
+}
+
+/*
+@keyframes fontSizeA{
+	0%{font-size : 100%}
+	100%{font-size : 300%}
+}
+
+@keyframes fontSizeB{
+	0%{font-size : 100%}
+	100%{font-size : 150%}
+}
+
+@keyframes fontSizeC{
+	0%{font-size : 100%}
+	100%{font-size : 75%}
+}
+*/
+
+@keyframes fontInc{
+	0%{transform: rotate(0deg)}
+	25%{transform: rotate(-10deg)}
+	50%{transform: rotate(0deg)}
+	75%{transform: rotate(10deg)}
+	100%{transform: rotate(0deg)}
+}
+
+@keyframes textSpin{
+	0%{transform: rotate(0deg)}
+	100%{transform: rotate(360deg)}
+}
+
+@keyframes messageAct{
+	0%{transform : translateY(10px)}
+	50%{transform : translateY(0px)}
+	100%{transform : translateY(10px)}
+}
+
+/*
+#message > ul > li > span:nth-child(even){
+	
+}
+*/
+
+.left > span{
+	background: white;
+}
+
+.left > span::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(15%);
+	left: -25px;
+	margin-top: -15px;
+	border: 10px solid transparent;
+	border-right: 15px solid white;
+}
+
+.right{
+	text-align: right;
+	margin-right: 20px;
+}
+
+.right > span{
+	background-color: #99CA63;
+	margin-right: 15px;	
+}
+
+.right > span::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	margin-top: -10px;
+	border: 10px solid transparent;
+	border-left: 15px solid #99CA63;
+}
+
+.right > img{
+	display: none;
+}
+
+@media screen and (max-width: 920px){
+	header{
+		padding: 3vw 5vw;
+	}
+
+	header > span{
+		font-size: 4vw;
+	}
+
+	header > span::before{
+		width: 2.75vw;
+    	height: 2.75vw;
+    	top: -2.5vw;
+    	margin-left: 0.75vw;
+    	left: 3vw;
+	}
+
+	header > div{
+		left: 0;	
+	}
+
+	header > div::after{
+		width: 2.75vw;
+	    height: 2.75vw;
+	    top: -2.5vw;
+	    margin-left: 0vw;
+    	margin-right: 3vw;
+	}
+
+	header > div > img{
+		width: 3.97vw;
+    	padding-right: 3vw;
+    	padding-left: 0;
+    	left: 0;
+	}
+
+	#message{
+		padding: 0vw 3vw;
+	}
+
+	#message > ul{
+		font-size: 5.5vw;
+	}
+
+	#message > ul > li > img{
+		width: 12vw;
+	}
+
+	.left > span::before{
+		left: -3.75vw;
+	    margin-top: -2.5vw;
+	    border: 2vw solid transparent;
+	    border-right: 2vw solid white;
+	    margin-top: -2.75vw;
+	}
+
+	.right{
+		margin-right: 7vw;
+	}
+
+	.right > span::before{
+	    margin-top: -2.5vw;
+	    border: 2.5vw solid transparent;
+	    border-left: 2.5vw solid #99CA63;
+	    margin-left: -0.5vw;
+	}
+
+	#message > ul > li > span{
+	    padding: 2vw 2vw 1vw 2vw;
+	    left: 6.5vw;
+	    border-radius: 2.5vw;
+	    margin-bottom: 7.5vw;
+	    top: 1.5vw;
+	}
+
+	.left > span{
+		margin-left: -4vw;
+	}
+
+	.right > span{
+		top: 1.5vw;
+	}
+}

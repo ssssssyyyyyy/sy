@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script type="text/javascript" src="../share_js/jquery.3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../share_css/animate.css">
+	<script type="text/javascript" src="../share_js/textillate/jquery.fittext.js"></script>
+	<script type="text/javascript" src="../share_js/textillate/jquery.lettering.js"></script>
+	<script type="text/javascript" src="../share_js/textillate/jquery.textillate.js"></script>
+	<link rel="stylesheet" type="text/css" href="../share_css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<section id="yellowSubmarine">
+		<img class="submarine submarine_1" src="img/submarine.png">
+		<!--<img class="submarine submarine_2" src="img/submarine_r.png">-->
+		<div class="about">
+			<h2>Yellow Sabmarine</h2>
+			<span>Yellow Sabmarine</span>
+		</div>
+		<div class="pop">
+			<p class="yellowSubmarine_text_1">We</p>
+			<p class="yellowSubmarine_text_2">All</p>
+			<p class="yellowSubmarine_text_3">Live in a</p>
+			<p class="yellowSubmarine_text_4">Yellow Submarine</p>
+			<p class="yellowSubmarine_text_5">Yellow Submarine</p>
+			<p class="yellowSubmarine_text_6">Yellow Submarine</p>
+		</div>
+	</section>
+</body>
+
+<script type="text/javascript">
+(function(d,b,w){
+	$("html body").css("overflow","hidden");
+	var q = d.createElement("div");
+	q.id = "bubbleparticle";
+	b.appendChild(q);
+	q = d.getElementById("bubbleparticle");
+	var h = w.innerHeight;
+	var u = d.documentElement.scrollTop || b.scrollTop;
+	var z = 99;
+	var t = new Array();
+	var l = new Array();
+	var y = new Array();
+	var s = new Array();
+	var g = new Array();
+	var c = new Array();
+	d.addEventListener("scroll",function(){u = d.documentElement.scrollTop || b.scrollTop;},false);
+	for(var i=0;i<50;i++){//【1】泡の量を指定
+	var m = d.createElement("div");
+	m.id = "awa"+i;
+	t[i] = Math.random()*h+u;
+	l[i] = Math.random()*w.innerWidth;
+	var p = Math.random()*8+6;
+	m.setAttribute("style","z-index:"+(z+i)+";top:"+t[i]+"px;width:"+p+"px;height:"+p+"px;left:"+l[i]+"px;");
+	m.setAttribute("class","bubble");
+	q.appendChild(m);
+	y[i] = Math.random()*25+0.1;
+	s[i] = Math.random()*2.5+0.5;//【2】泡の上昇速度
+	g[i] = d.getElementById("awa"+i);
+	c[i] = 0;
+	}
+	setInterval(function(){
+	for(var i=0;i<50;i++){//【1】泡の量を指定
+	  if(u<t[i]){
+	    if(y[i]>=c[i]){
+	      l[i] = l[i]+0.5+Math.random()*0.5;
+	    }else{
+	      l[i] = l[i]-0.5-Math.random()*0.5;
+	    }
+	    if((y[i]*2)<=c[i]){
+	      c[i] = 0;
+	    }
+	  }else{
+	    t[i] = u+h-10;
+	    l[i] = Math.random()*w.innerWidth;
+	  }
+	  t[i] = t[i]-s[i];
+	  g[i].style.top = t[i]+"px";
+	  g[i].style.left = l[i]+"px";
+	  c[i]++;
+	}
+	},50);//【3】繰り返しまでの数値
+})(document,document.body,window);
+</script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>
