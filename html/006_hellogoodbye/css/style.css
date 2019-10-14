@@ -290,7 +290,7 @@ header > div::after{
 	header > span::before{
 		width: 2.75vw;
     	height: 2.75vw;
-    	top: -2.5vw;
+    	top: -2.75vw;
     	margin-left: 0.75vw;
     	left: 3vw;
 	}
