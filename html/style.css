@@ -186,6 +186,11 @@ body{
     box-shadow: 0px 3px 0px 0px #481700;
 }
 
+.iziModal-content img{
+	margin: auto;
+    display: block;
+}
+
 @media screen and (max-width: 1600px){
 	#mascotCahara{
 		transform: translateX(-50%) scale(0.425)
