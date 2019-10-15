@@ -285,12 +285,14 @@ header > div::after{
 
 	header > span{
 		font-size: 4vw;
+		position: relative;
+    	top: 0.5vw;
 	}
 
 	header > span::before{
-		width: 2.75vw;
-    	height: 2.75vw;
-    	top: -2.75vw;
+		width: 2.5vw;
+    	height: 2.5vw;
+    	top: -2.5vw;
     	margin-left: 0.75vw;
     	left: 3vw;
 	}
