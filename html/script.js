@@ -1,3 +1,4 @@
+
 class mascot {
   constructor(mascotSel, rightPupilSel, leftPupilSel) {
     this._dom = $(mascotSel);
@@ -112,22 +113,63 @@ $(".case_slider > li > img").mouseover(function () {
   }
 })
 
-/*
-$("#case > ul").slick({
-  arrows: false,
-    autoplay: true,
-    autoplaySpeed: 0,
-    cssEase: "linear",
-    speed: 5000,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    responsive: [
-     {
-      breakpoint: 1476,
-      settings: {
-        slidesToShow: 2
+$(function() {
+  $(".link_modal_1").iziModal({
+    background: "rgba(0,0,0,0)"
+  });
+})
+
+$(function() {
+  $(".link_modal_2").iziModal({
+    background: "rgba(0,0,0,0)"
+  });
+})
+
+$(function() {
+  $(".link_modal_3").iziModal({
+    background: "rgba(0,0,0,0)"
+  });
+})
+
+$(function() {
+  $(".link_modal_4").iziModal({
+    background: "rgba(0,0,0,0)"
+  });
+})
+
+$(function() {
+  $(".link_modal_5").iziModal({
+    background: "rgba(0,0,0,0)"
+  });
+})
+
+$(function() {
+  $(".link_modal_6").iziModal({
+    background: "rgba(0,0,0,0)"
+  });
+})
+
+$(window).on("load resize", function(){
+  var wW = $(window).innerWidth();
+  if(wW < 1024){
+    
+    setInterval(randEye,1000);
+    function randEye(){
+      function rand(min, max){
+        var offset = min;
+        var range = (max - min) + 1;
+        var randomNumber = Math.floor( Math.random() * range) + offset;
+        return randomNumber;
       }
-     }
-   ]
+
+      var rightEyeY = rand(12,45);
+      var leftEyeY = rightEyeY-97;
+      var rightEyeX = rand(8,45);
+      var leftEyeX = rightEyeX+3;
+
+      $("#mascot_left_eye > div").css("transform","translate("+leftEyeY+"%,"+leftEyeX+"%)");
+      $("#mascot_right_eye > div").css("transform","translate("+rightEyeY+"%,"+rightEyeX+"%)");
+    }
+
+  }
 });
-*/

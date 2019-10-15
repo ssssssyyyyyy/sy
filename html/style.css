@@ -47,8 +47,11 @@ body{
 }
 
 .card > span{
-	font-weight: bold;
 	font-size: 14px;
+}
+
+.card > div{
+	font-weight: bold;
 }
 
 .fuwafuwa{
@@ -88,20 +91,6 @@ body{
 	bottom: -365px;
 	left: 50%;
 	transform: translateX(-50%) scale(0.65);
-}
-
-.uneCircle{
-	/*border: 5px solid #87CCA1;*/
-	/*background-color: #9ae0c0;
-	animation: uneune 5s linear infinite;
-	position: fixed;
-	max-width: 720px;
-	max-height: 720px;
-	width: 720px;
-	height: 720px;
-	bottom: -380px;
-	left: 50%;
-	transform: translateX(-50%);*/
 }
 
 @keyframes uneune{
@@ -172,15 +161,45 @@ body{
     box-sizing: border-box;
 }
 
+.iziModal{
+	background-color: white!important;
+    width: 94%!important;
+}
+
+.iziModal-content{
+	padding: 20px!important;
+	font-size: 15px;
+}
+
+.iziModal-content > a{
+    background-color: #a73600;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 60px;
+    box-shadow: 0px 3px 0px 0px #481700;
+}
+
 @media screen and (max-width: 1600px){
 	#mascotCahara{
 		transform: translateX(-50%) scale(0.425)
 	}
-}
 
-@media screen and (max-width: 1300px){
 	.case_slider{
-		max-width: 70vw;
+		max-width: 60vw;
+	}
+
+	.card{
+		top: -3vw;
+	    width: 10vw;
+	    padding: 1vw;
+	    font-size: 1.25vw;
 	}
 }
 
@@ -210,10 +229,19 @@ body{
 	    padding: 3vw;
 	    font-size: 3.5vw;
 	}
+
 }
 
 @media screen and (max-width: 650px){
 	#mascotCahara{
 		transform: translateX(-50%) scale(0.25);
+	}
+
+	.iziModal-content{
+		font-size: 4.25vw;
+	}
+
+	.show_sp{
+		display: none;
 	}
 }

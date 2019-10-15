@@ -2,7 +2,7 @@
 
 html{
 	font-family: "M PLUS Rounded 1c", sans-serif;
-	color: #333;
+	color: #676767;
 	scroll-behavior: smooth;
 }
 
@@ -27,7 +27,7 @@ p{
 
 header{
     margin: auto;
-    background-color: black;
+    background-color: #6b3400;
 	padding: 10px 20px;
 }
 
@@ -47,7 +47,7 @@ header > ul > li{
 
 .product_link{
 	padding: 20px 30px;
-    background-color: #ff8d00;
+    background-color: #6b3400;
     z-index: 99;
     position: relative;
     text-decoration: none;
@@ -61,7 +61,6 @@ header > ul > li{
     font-weight: bold;
     margin-bottom: -58px;
     font-size: 16px;
-    box-shadow: 0px 0px 2px 0px #402300;
 }
 
 h1,
@@ -71,7 +70,8 @@ h2{
     margin: auto;
     display: block;
     text-align: center;
-    border-bottom: dotted 4px #333;
+    border-bottom: dotted 4px #b79060;
+    color: #b79060;
 }
 
 #Introduction > p{
@@ -85,7 +85,7 @@ h2{
 
 #scene,
 #other{
-	background-image: url("../../share_img/dot_back.png");
+	background-image: url("../../share_img/dot_back_001.png");
 	padding: 60px 0 5px;
 }
 
@@ -114,7 +114,7 @@ h2{
     position: relative;
     top: -100px;
     background-color: white;
-    border: solid 5px;
+    border: solid 5px #b79060;
     border-radius: 60px;
     padding: 20px;
     max-width: 250px;
@@ -126,7 +126,8 @@ h2{
 }
 
 .scene_exp > span{
-	border-bottom: dotted 4px;
+	border-bottom: dotted 4px #b79060;
+	color: #b79060;
     padding-bottom: 12px;
     font-size: 22px;
     text-align: center;
@@ -151,7 +152,7 @@ h2{
 .scene_content > img{
 	max-width: 750px;
 	width: 100%;
-	box-shadow: 8px 8px 0px 0px #232323;
+	box-shadow: 8px 8px 0px 0px #a28d71;
 	transition: opacity 0.3s ease-out;
 }
 
@@ -182,6 +183,7 @@ h2{
 #product > ul > li > h3{
 	font-size: 24px;
     margin: 0 0 15px;
+    color: #6f6f6f;
 }
 
 #product > ul > li > p{
@@ -192,12 +194,17 @@ h2{
 
 #product > ul > li > a{
 	float: right;
-    background-color: #ff8d00;
+    background-color: #6b3400;
     padding: 14px;
     border-radius: 6px;
     font-weight: bold;
     color: white;
-    box-shadow: 0px 0px 2px 0px #402300;
+}
+
+#product > ul > li > a:hover{
+	background-color: white;
+    color: #6b3400;
+    border: solid 1px;
 }
 
 .other_content{
@@ -205,7 +212,7 @@ h2{
     width: 100%;
     margin: auto;
     background-color: white;
-    border: solid 4px #383838;
+    border: solid 4px #b79060;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -216,8 +223,9 @@ h2{
     margin: auto;
     display: block;
     text-align: center;
-    border-bottom: dotted 4px #333;
+    border-bottom: dotted 4px #b79060;
     font-weight: bold;
+    color: #b79060;
 }
 
 .other_content > ul{

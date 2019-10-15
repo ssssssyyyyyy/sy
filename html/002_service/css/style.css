@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+html{
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	color: #333;
+}
+
+body{
+	background-image: url(../../share_img/dot_back.png);
+}
+
+header{
+	float: left;
+	z-index: 99;
+	position: relative;
+}
+
+section{
+	margin: 30px;
+    padding: 30px;
+}
+
+header > img{
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+}
+
+#app{
+	position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+}
+
+#app > img{
+	max-width: 200px;
+    width: 100%;
+    margin: 0 3px;
+}
+
+#mv{
+	padding: 0;
+	width: 100%;
+	height: auto;
+	background-color: #5d3522;
+    margin: 20px auto 0;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+#mv > div{
+	font-size: 130px;
+    color: white;
+    text-align: center;
+}
+
+/*
+#mv > img{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    box-sizing: border-box;
+}
+*/
+
+#intro,
+#sentence,
+#case,
+#movie{
+	background-color: #fff8ea;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 1400px;
+    margin: auto;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 25px; 
+}
+
+#intro h1,
+.main_copy{
+    margin: 0;
+    font-size: 35px;
+    font-weight: bold;
+    border-bottom: solid 4px #7b462d;
+    display: inline-block;
+    color: #333;
+}
+
+.sub_copy{
+	margin: 30px 0;
+	font-size: 16px;
+}
+
+#intro > ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#intro > ul > li{
+	background-color: white;
+    width: 30%;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 7px;
+    display: inline-block;
+}
+
+#intro > ul > li > img{
+	width: 100%;
+	max-width: 80px;
+	display: block;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+#intro > ul > li > span{
+	font-size: 16px;
+	margin-top: 8px;
+	font-weight: bold;
+}
+
+#intro > ul > li > p{
+    margin: 14px 0 0;
+    font-size: 12px;
+}
+
+#sentence > p{
+	margin-bottom: 0;
+}
+
+#case > ul{
+	padding: 0;
+}
+
+#case > ul > li{
+	list-style: none;
+}
+
+#case img{
+	/*width: 100px;*/
+	border-radius: 100px;
+}
+
+#movie > li{
+	list-style: none;
+    max-width: 402px;
+    width: 100%;
+    background-color: white;
+    display: inline-block;
+    margin: 30px 5px;
+}
+
+#movie > li > p{
+	margin: 0;
+    padding: 20px;
+}
+
+.movie{
+    width: 100%;
+}
+
+#app > img{
+	display: none;
+}
+
+@media screen and (max-width: 1475px){
+	section{
+		margin: 0;
+    	margin: 2vw;
+	}
+
+	header > img{
+		width: 35vw;
+	}
+
+	#intro,
+	#sentence,
+	#case,
+	#movie{
+		margin: 2vw;
+	}
+
+	#case img{
+		width: 18vw;
+		border-radius: 13vw;
+	}
+}
+
+@media screen and (max-width: 760px){
+	#mv{
+		margin: 0;
+		padding: 0;
+	}
+
+	#mv > div{
+		font-size: 14vw;
+		margin-top: 0;
+		padding: 7vw;
+	}
+}
+
+@media screen and (max-width: 610px){
+	header > img{
+		width: 23vw;
+	}
+
+	section{
+		padding: 3vw;
+	}
+
+	#intro h1,
+	.main_copy{
+		font-size: 6vw;
+	}
+
+	.sub_copy{
+		font-size: 4.5vw;
+	}
+
+	#intro > ul > li{
+		width: 100%;
+	    margin: 2vw 0;
+	    padding: 6vw;
+	}
+
+	#intro > ul > li > img{
+		margin-bottom: 2.5vw;
+	}
+
+	#intro > ul > li > span{
+		font-size: 5vw;
+    	margin-top: 0;
+	}
+
+	#intro > ul > li > p{
+		margin: 1.5vw 0 0;
+    	font-size: 4vw;
+	}
+
+	#movie > li{
+		margin: 3vw 0;
+	}
+
+	#movie > li > p{
+		font-size: 4vw;
+	}
+
+	#app > img{
+		width: 40vw;
+	}
+}
