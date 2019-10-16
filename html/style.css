@@ -249,4 +249,8 @@ body{
 	.show_sp{
 		display: none;
 	}
+
+	.link_modal_5{
+		font-size: 3.5vw;
+	}
 }
