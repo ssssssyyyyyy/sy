@@ -193,3 +193,11 @@ $(window).on("load resize", function(){
       }
   }
 });
+
+$(function(){
+  $(".pic_slider").slick({
+    autoplay: true,
+    arrows: false,
+    autoplaySpeed : 2000
+  })
+})
