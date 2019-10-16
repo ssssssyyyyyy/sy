@@ -115,37 +115,49 @@ $(".case_slider > li > img").mouseover(function () {
 
 $(function() {
   $(".link_modal_1").iziModal({
-    background: "rgba(0,0,0,0)"
+    background: "rgba(0,0,0,0)",
+    transitionIn: "bounceInUp",
+    transitionOut: "bounceOutDown"
   });
 })
 
 $(function() {
   $(".link_modal_2").iziModal({
-    background: "rgba(0,0,0,0)"
+    background: "rgba(0,0,0,0)",
+    transitionIn: "bounceInUp",
+    transitionOut: "bounceOutDown"
   });
 })
 
 $(function() {
   $(".link_modal_3").iziModal({
-    background: "rgba(0,0,0,0)"
+    background: "rgba(0,0,0,0)",
+    transitionIn: "bounceInUp",
+    transitionOut: "bounceOutDown"
   });
 })
 
 $(function() {
   $(".link_modal_4").iziModal({
-    background: "rgba(0,0,0,0)"
+    background: "rgba(0,0,0,0)",
+    transitionIn: "bounceInUp",
+    transitionOut: "bounceOutDown"
   });
 })
 
 $(function() {
   $(".link_modal_5").iziModal({
-    background: "rgba(0,0,0,0)"
+    background: "rgba(0,0,0,0)",
+    transitionIn: "bounceInUp",
+    transitionOut: "bounceOutDown"
   });
 })
 
 $(function() {
   $(".link_modal_6").iziModal({
-    background: "rgba(0,0,0,0)"
+    background: "rgba(0,0,0,0)",
+    transitionIn: "bounceInUp",
+    transitionOut: "bounceOutDown"
   });
 })
 
