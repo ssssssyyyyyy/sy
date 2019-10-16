@@ -150,26 +150,46 @@ $(function() {
 })
 
 $(window).on("load resize", function(){
-  var wW = $(window).innerWidth();
-  if(wW < 1024){
-    
-    setInterval(randEye,1000);
-    function randEye(){
-      function rand(min, max){
-        var offset = min;
-        var range = (max - min) + 1;
-        var randomNumber = Math.floor( Math.random() * range) + offset;
-        return randomNumber;
+  if(navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){     
+        setInterval(randEye,1000);
+        function randEye(){
+          function rand(min, max){
+            var offset = min;
+            var range = (max - min) + 1;
+            var randomNumber = Math.floor( Math.random() * range) + offset;
+            return randomNumber;
+          }
+
+          var rightEyeY = rand(50,83);
+          var leftEyeY = rightEyeY-97;
+          var rightEyeX = rand(63,100);
+          var leftEyeX = rightEyeX+3;
+
+          $("#mascot_left_eye > div").css("transform","translate("+leftEyeY+"%,"+leftEyeX+"%)");
+          $("#mascot_right_eye > div").css("transform","translate("+rightEyeY+"%,"+rightEyeX+"%)");
+        }
+  }else{
+      var wW = $(window).innerWidth();
+      if(wW < 1024){
+        
+        setInterval(randEye,1000);
+        function randEye(){
+          function rand(min, max){
+            var offset = min;
+            var range = (max - min) + 1;
+            var randomNumber = Math.floor( Math.random() * range) + offset;
+            return randomNumber;
+          }
+
+          var rightEyeY = rand(12,45);
+          var leftEyeY = rightEyeY-97;
+          var rightEyeX = rand(8,45);
+          var leftEyeX = rightEyeX+3;
+
+          $("#mascot_left_eye > div").css("transform","translate("+leftEyeY+"%,"+leftEyeX+"%)");
+          $("#mascot_right_eye > div").css("transform","translate("+rightEyeY+"%,"+rightEyeX+"%)");
+        }
+
       }
-
-      var rightEyeY = rand(12,45);
-      var leftEyeY = rightEyeY-97;
-      var rightEyeX = rand(8,45);
-      var leftEyeX = rightEyeX+3;
-
-      $("#mascot_left_eye > div").css("transform","translate("+leftEyeY+"%,"+leftEyeX+"%)");
-      $("#mascot_right_eye > div").css("transform","translate("+rightEyeY+"%,"+rightEyeX+"%)");
-    }
-
   }
 });
