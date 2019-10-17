@@ -253,5 +253,8 @@ body{
 	.link_modal_4 .iziModal-content{
 		font-size: 3.25vw;
 	}
+#mascot_eye > div > .eye{
+transition-duration: 1s;
+}
 
 }
