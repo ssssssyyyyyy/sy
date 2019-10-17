@@ -159,7 +159,6 @@ body{
     height: 140px;
     padding: 50px;
     box-sizing: border-box;
-transition: 1s;
 }
 
 .iziModal{
@@ -254,4 +253,8 @@ transition: 1s;
 	.link_modal_4 .iziModal-content{
 		font-size: 3.25vw;
 	}
+
+#mascot_eye > div > .eye{
+transition-duration: 1s;
+}
 }
