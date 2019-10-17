@@ -159,6 +159,7 @@ body{
     height: 140px;
     padding: 50px;
     box-sizing: border-box;
+transition: 1s;
 }
 
 .iziModal{
