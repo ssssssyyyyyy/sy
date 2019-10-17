@@ -27,7 +27,7 @@ p{
 
 header{
     margin: auto;
-    background-color: #6b3400;
+    background-color: #6b1900;
 	padding: 10px 20px;
 }
 
@@ -47,7 +47,7 @@ header > ul > li{
 
 .product_link{
 	padding: 20px 30px;
-    background-color: #6b3400;
+    background-color: #6b1900;
     z-index: 99;
     position: relative;
     text-decoration: none;
@@ -70,8 +70,8 @@ h2{
     margin: auto;
     display: block;
     text-align: center;
-    border-bottom: dotted 4px #b79060;
-    color: #b79060;
+    border-bottom: dotted 4px #bf6949;
+    color: #bf6949;
 }
 
 #Introduction > p{
@@ -114,7 +114,7 @@ h2{
     position: relative;
     top: -100px;
     background-color: white;
-    border: solid 5px #b79060;
+    border: solid 5px #bf6949;
     border-radius: 60px;
     padding: 20px;
     max-width: 250px;
@@ -126,8 +126,8 @@ h2{
 }
 
 .scene_exp > span{
-	border-bottom: dotted 4px #b79060;
-	color: #b79060;
+	border-bottom: dotted 4px #bf6949;
+	color: #bf6949;
     padding-bottom: 12px;
     font-size: 22px;
     text-align: center;
@@ -152,7 +152,7 @@ h2{
 .scene_content > img{
 	max-width: 750px;
 	width: 100%;
-	box-shadow: 8px 8px 0px 0px #a28d71;
+	box-shadow: 8px 8px 0px 0px #92625a;
 	transition: opacity 0.3s ease-out;
 }
 
@@ -194,7 +194,7 @@ h2{
 
 #product > ul > li > a{
 	float: right;
-    background-color: #6b3400;
+    background-color: #6b1900;
     padding: 14px;
     border-radius: 6px;
     font-weight: bold;
@@ -203,7 +203,7 @@ h2{
 
 #product > ul > li > a:hover{
 	background-color: white;
-    color: #6b3400;
+    color: #6b1900;
     border: solid 1px;
 }
 
@@ -212,7 +212,7 @@ h2{
     width: 100%;
     margin: auto;
     background-color: white;
-    border: solid 4px #b79060;
+    border: solid 4px #bf6949;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -223,9 +223,9 @@ h2{
     margin: auto;
     display: block;
     text-align: center;
-    border-bottom: dotted 4px #b79060;
+    border-bottom: dotted 4px #bf6949;
     font-weight: bold;
-    color: #b79060;
+    color: #bf6949;
 }
 
 .other_content > ul{

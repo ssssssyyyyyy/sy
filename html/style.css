@@ -235,6 +235,14 @@ body{
 	    font-size: 3.5vw;
 	}
 
+	#mascot_right_eye > .eye{
+		transform: translate(26%, 27%);
+	}
+
+	#mascot_left_eye > .eye{
+		transform: translate(31%, 25%);
+	}
+
 }
 
 @media screen and (max-width: 650px){
@@ -253,8 +261,9 @@ body{
 	.link_modal_4 .iziModal-content{
 		font-size: 3.25vw;
 	}
-#mascot_eye > div > .eye{
-transition-duration: 1s;
-}
+
+	#mascot_eye > div > .eye{
+		transition-duration: 1s;
+	}
 
 }
