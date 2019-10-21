@@ -9,6 +9,7 @@
 	<!--web fonts-->
 	<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
 	<!--web fonts-->
+	<script src="../share_js/jquery.3.2.1.min.js"></script>
 </head>
 <body>
 <header>
@@ -26,6 +27,14 @@
 	<h1>文章文章文章文章文章<br>文章文章<p>text text text text text text text text <br>text text text text text text text text text text </p></h1>
 	<a>私たちの〇〇を知る</a>
 </section>
+<script type="text/javascript">
+	$(window).on("load resize", function(){
+		var wH = $(window).height();
+		var mH = $("#main").height();
+		var padd = (wH - mH)/2;
+		$("#main").css("padding",padd+"px 0");
+	});
+</script>
 <div class="arrowWrap">
 	<div class="arrowInner">
 	  <p>SCROLL DOWN</p>
@@ -99,7 +108,6 @@
 	  bubbleFunc:() => `hsla(${Math.random() * 50}, 100%, 50%, .3)`
 });</script>
 
-<script src="../share_js/jquery.3.2.1.min.js"></script>
 <!--slick-->
 <link rel="stylesheet" type="text/css" href="../share_js/slick/slick.css"/>
 <script type="text/javascript" src="../share_js/slick/slick.min.js"></script>
