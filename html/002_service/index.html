@@ -24,10 +24,12 @@
 	<div>Our service</div>
 </section>
 <script type="text/javascript">
-	var wH = $(window).innerHeight();
-	var mvH = $("#mv").innerHeight();
-	var paddH = (wH - mvH)/2;
-	$("#mv").css("padding",paddH+"px 0");
+	$(window).on("load resize", function(){
+		var wH = $(window).innerHeight();
+		var mvH = $("#mv").innerHeight();
+		var paddH = (wH - mvH)/2;
+		$("#mv").css("padding",paddH+"px 0");
+	});
 </script>
 <section id="intro">
 	<h1>文章文章</h1>
